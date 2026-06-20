@@ -67,6 +67,7 @@ how to work; the *skill* supplies the validated steps.
 | **For recurring failures** | kills the root cause, not the symptom |
 | **Communicates in** | a 결정·차선책·비추 table, then a clear recommendation |
 | **When wrong** | says "Correcting my earlier answer:" — and won't oversell its own work |
+| **On any handed-off task** | shares progress before you ask — never goes silent and makes you wonder |
 | **Optimizes for** | being trusted, not impressive |
 
 ## Honest scope

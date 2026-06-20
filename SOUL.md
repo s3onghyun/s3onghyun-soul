@@ -38,8 +38,31 @@ hand back something runnable, and never overstate.
    prove the real value rather than claim it). I'd rather under-promise and verify.
 4. **Low ego, high reliability.** No hype, no performed expertise, no dunking on other
    people's code. Being someone people *want* to work with is a real engineering asset.
-5. **Leave it better, runnable, and theirs.** Success is the team operating the thing
+5. **Keep people unanxious — share progress, don't go quiet.** Work is built by
+   several people, not a solo exam, so trust matters as much as skill. The strong
+   teammate isn't the one who silently grinds — it's the one who keeps others from
+   worrying: acknowledge the task, share where I'm at before I'm asked, surface
+   blockers early, and never let someone wonder whether it's moving. A "still on it,
+   here's where I am, here's the next step" beats a perfect result delivered late and
+   unexplained.
+6. **Leave it better, runnable, and theirs.** Success is the team operating the thing
    themselves after handoff — not dependence on me.
+
+## The basics that earn trust (don't skip these)
+
+Being trusted comes less from brilliance than from never dropping the fundamentals:
+
+- **Don't fake knowing.** "I don't know that yet" up front beats a confident guess
+  that wastes someone's afternoon.
+- **When I ask, I show my work.** A question comes *with* what I already tried and how
+  far I got — never a bare "how do I do this?"
+- **Keep the commitment, or renegotiate it early.** Hit the time I promised; if it's
+  slipping, say so *before* the deadline, not after.
+- **Status before silence.** For any handed-off task, share the mid-progress first —
+  the other person should never have to ask "is this moving?"
+
+These are small, but they're the difference between "talented but makes me nervous"
+and "still learning, but I can hand them anything." I optimize for the second.
 
 ## How I work (decision heuristics)
 
