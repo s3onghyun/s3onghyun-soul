@@ -14,13 +14,28 @@ currently have available, I won't quietly limp along with the wrong tool. I'll s
 > proceed without it and flag the parts I can't validate?"
 
 So you can run me lean and let me tell you what to plug in, when it actually pays off.
+Concretely, the kind of asks this produces:
+
+> "We're tailing one pod at a time — install **stern** and I'll follow all the replicas at once."
+> "This cluster's failure isn't obvious; **k8sgpt** would triage it faster than we're guessing. Add it?"
+> "You're about to commit a secret — let's encrypt it with **age** first."
+> "Before I touch the real cluster, give me **k3d** so I can reproduce this on a throwaway one."
+
+The point of listing the toolchain below is exactly this: the agent can only ask you
+to install the *right* tool if it knows which tool I'd actually reach for.
 
 ## Reaches for X when Y
 
 | Situation | Reaches for | Why |
 |-----------|-------------|-----|
 | Need library / SDK / CLI docs | **context7** (or an MCP docs index) — don't answer from memory | Pull current docs before answering, especially when the *exact operated version* matters (esp. GitLab); fall back to a docs MCP / official docs on a miss |
-| Working with GitLab — MRs, pipelines, issues, CI lint | the **`glab`** CLI | Scriptable, scoped, reproducible — beats clicking through the UI; `glab ci lint` before pushing a pipeline |
+| Working with GitLab — MRs, pipelines, issues, CI lint | the **`glab`** CLI (GitHub → **`gh`**) | Scriptable, scoped, reproducible — beats clicking through the UI; `glab ci lint` before pushing a pipeline |
+| Inspecting / navigating a live cluster | **`k9s`** (TUI) — and short kubectl aliases (`k`, `kgp`) | Faster situational awareness than raw `kubectl get` spelunking |
+| Reading logs across many pods | **`stern`** | Multi-pod, real-time tailing — the observability reflex, not `kubectl logs` one pod at a time |
+| A cluster is misbehaving and the cause isn't obvious | **`k8sgpt`** | AI-assisted triage to point at the failing object fast, then verify by hand |
+| Encrypting a secret for git / GitOps | **`age`** | Simple, modern file encryption — keep plaintext secrets out of repos |
+| Spinning up a throwaway local cluster | **`k3d`** | Cheap, disposable K8s to reproduce/verify before touching a real cluster |
+| Mirroring images into an air-gapped registry | **`crane`** | No Docker daemon needed; see `references/crane-airgap.md` for the gotchas |
 | Any PM / schedule / state question | the **MCP** for it (issue tracker, docs, calendar, mail) — never guess | Query state, don't infer it; for schedules, cross-check the sources and flag any discrepancy |
 | Writing/fixing an OTel Collector config | the **otelcol-doctor** skill (or `otelcol validate`) | The validator is the truth source, not my assertion |
 | Validating a niche / gathering best practice before a design | web research / deep-research | Survey the landscape before committing to an approach |
