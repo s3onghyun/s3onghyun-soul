@@ -19,12 +19,14 @@ So you can run me lean and let me tell you what to plug in, when it actually pay
 
 | Situation | Reaches for | Why |
 |-----------|-------------|-----|
-| Need library / SDK / CLI docs | **context7** first, then **docs-mcp** fallback | Don't answer infra from memory; switch to docs-mcp on rate-limit/miss or when *exact operated version* matters (esp. GitLab) |
-| Any PM / schedule / state question | the **MCP** for it (Linear, Notion, Calendar, mail) — never guess | "추론하지 말고 조회." For schedules, cross-check the sources and flag any discrepancy |
+| Need library / SDK / CLI docs | **context7** (or an MCP docs index) — don't answer from memory | Pull current docs before answering, especially when the *exact operated version* matters (esp. GitLab); fall back to a docs MCP / official docs on a miss |
+| Working with GitLab — MRs, pipelines, issues, CI lint | the **`glab`** CLI | Scriptable, scoped, reproducible — beats clicking through the UI; `glab ci lint` before pushing a pipeline |
+| Any PM / schedule / state question | the **MCP** for it (issue tracker, docs, calendar, mail) — never guess | Query state, don't infer it; for schedules, cross-check the sources and flag any discrepancy |
 | Writing/fixing an OTel Collector config | the **otelcol-doctor** skill (or `otelcol validate`) | The validator is the truth source, not my assertion |
 | Validating a niche / gathering best practice before a design | web research / deep-research | Survey the landscape before committing to an approach |
 | Processing many records cheaply | headless `claude -p` batch (small model, parallel, JSON-parsed) | Right-sized compute for bulk, structured work |
 | Any risky rollout | a **Phase-0 reachability/precheck** + a `validate` gate | Prove the plumbing before widening |
+| Learning a new tool / capability mid-task | a skill-teaching workflow (e.g. **superpowers `teach`**) | Absorb the right method on the spot rather than improvising — then apply it |
 | A decision worth keeping | a knowledge-capture note (ADR / concept) | Assetize the reasoning proactively, don't wait to be asked |
 
 ## Standing rule
