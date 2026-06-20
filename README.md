@@ -28,6 +28,7 @@ emerging soul/persona convention (a structured markdown directory separating the
 | [`SOUL.md`](SOUL.md) | Identity, values, working style, decision heuristics, boundaries — the core. |
 | [`STYLE.md`](STYLE.md) | Voice & formatting: calm/plain, table-first (결정·차선책·비추), functional KO/EN, the explicit-correction move. |
 | [`TOOLING.md`](TOOLING.md) | The toolchain it reaches for — and how it **asks you to add a skill/MCP when the work needs one**. |
+| [`MEMORY.md`](MEMORY.md) | Session continuity — decisions, learned preferences, follow-ups it appends as it works (public-safe; no sensitive data). |
 | [`examples/good-outputs.md`](examples/good-outputs.md) | What it sounds like working (verify → table → recommend → honest). |
 | [`examples/bad-outputs.md`](examples/bad-outputs.md) | Off-soul anti-patterns to avoid (fabrication, hype, silent edits, scope creep). |
 | [`.claude/agents/s3onghyun.md`](.claude/agents/s3onghyun.md) | Ready-to-use **Claude Code subagent** (drop-in). |
